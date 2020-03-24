@@ -3,7 +3,7 @@ import React from 'react'
 const InterestsTab = () => {
     return(
         // not sure how this section will be, idk what interests I will include
-        <div id="interests" className="container windowHeight">
+        <div id="6" className="container windowHeight">
             <div className="row">
                 <div className="col-6">
                     ballroom img

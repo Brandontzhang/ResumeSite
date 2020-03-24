@@ -1,13 +1,23 @@
 import React from 'react'
+import {connect} from 'react-redux'
 //import styles from '../css/intro.module.css'
 
 class IntroTab extends React.Component {
-    componentDidMount() {
-        console.log(this.isInViewport())
+    compondidDidMount() {
+        window.addEventListener('scroll', (e)=>console.log(e.target));
     }
 
-    isInViewport = (offset) => {
-        offset = window.innerHeight/2
+    componentWillUnmount() {
+        window.removeEventListener('scroll');
+    }
+
+    handleScroll = () => {
+        console.log("hello")
+    }
+
+
+    isInViewport = () => {
+        const offset = window.innerHeight/2
         const element = document.getElementById("intro")
         if (!element) return false;
         const top = element.getBoundingClientRect().top;
@@ -16,7 +26,7 @@ class IntroTab extends React.Component {
 
     render() {
         return (
-            <div id="intro" className={"container windowHeight"}>
+            <div id="1" className={"container windowHeight"}>
                 <div className="row">
                     <div className="col-8">
                         <h1>Hello! My name is Brandon!</h1>
@@ -36,4 +46,16 @@ class IntroTab extends React.Component {
     }
 }
 
-export default IntroTab
+const stateToPropertyMapper = (state)  => ({
+    selected: state.intro.current
+})
+
+const dispatcherToPropertyMapper = (dispatch) => ({
+
+})
+
+
+export default connect(
+    stateToPropertyMapper,
+    dispatcherToPropertyMapper)
+    (IntroTab)

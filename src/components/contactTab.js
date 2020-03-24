@@ -2,7 +2,7 @@ import React from 'react'
 
 const ContactTab = () => {
     return (
-        <div id="contact" className="container windowHeight">
+        <div id="7" className="container windowHeight">
             <div>
                 Contact form here, not with form html, custom made with inputs and buttons
             </div>

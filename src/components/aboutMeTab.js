@@ -2,7 +2,7 @@ import React from 'react'
 
 const AboutMeTab = () => {
     return (
-        <div id="aboutMe" className="container windowHeight">
+        <div id="2" className="container windowHeight">
             <div className="row">
                 <div className="col-8">
                     Gonna have a picture of me here?

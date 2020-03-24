@@ -2,7 +2,7 @@ import React from 'react'
 
 const ProjectTab = () => {
     return (
-        <div id="projects" className="container windowHeight">
+        <div id="5" className="container windowHeight">
             <div className="row">
                 <div className="col-4">
                     Project 1 card

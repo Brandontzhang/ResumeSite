@@ -1,8 +1,8 @@
 import React from 'react'
 
-const WorkTab = () => {
+const ExperiencesTab = () => {
     return(
-        <div id="experiences" className="container windowHeight">
+        <div id="3" className="container windowHeight">
             <ul>
                 <li>
                     <h2>2020</h2>
@@ -25,4 +25,4 @@ const WorkTab = () => {
     )
 }
 
-export default WorkTab
+export default ExperiencesTab
