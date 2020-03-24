@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+.windowHeight {
+  height: 100vH
+}
+
+.row-no-padding > [class*="col-"] {
+  padding-left: 0;
+  padding-right: 0;
+}
