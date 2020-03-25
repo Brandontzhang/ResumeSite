@@ -38,7 +38,8 @@
 }
 
 .windowHeight {
-  height: 100vH
+  height: 100vh;
+  vertical-align: middle
 }
 
 .row-no-padding > [class*="col-"] {
@@ -47,5 +48,6 @@
 }
 
 body {
-  background-color: #145DA0
+  background-color: #145DA0;
+  color: white;
 }

@@ -9,6 +9,7 @@
     border: none;
     color: #B1D4E0;
     border-radius: 0%;
+    cursor: pointer;
 }
 
 .inactive {
@@ -16,4 +17,5 @@
     color: #B1D4E0;
     border: none;
     border-radius: none;
+    cursor: pointer;
 }
