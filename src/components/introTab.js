@@ -18,7 +18,7 @@ class IntroTab extends React.Component {
 
     render() {
         return (
-            <div id="1" className={`container windowHeight`}>
+            <div id="1" className="container windowHeight">
                 <div className="row windowHeight">
                     <div className="col-8 my-auto">
                         <h1 className={styles.introHeader}>Brandon Zhang</h1>
@@ -26,21 +26,15 @@ class IntroTab extends React.Component {
                     </div>
                     <div className="col-4 my-auto">
                         <button className={styles.introButton}
-                            onClick={() => {
-                                scrollToSection("2")
-                            }}>
+                            onClick={() => {scrollToSection("2")}}>
                             About Me
                         </button>
                         <button className={styles.introButton}
-                            onClick={() => {
-                                scrollToSection("6")
-                            }}>
+                            onClick={() => {scrollToSection("6")}}>
                             Resume
                         </button>
                         <button className={styles.introButton}
-                            onClick={() => {
-                                scrollToSection("7")
-                            }}>
+                            onClick={() => {scrollToSection("7")}}>
                             Contact
                         </button>
                     </div>

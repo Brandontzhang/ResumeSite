@@ -1,0 +1,14 @@
+.card {
+    width: 18rem;
+    color: #B1D4E0;
+    background-color: #0C2D48;
+}
+
+.cardHeight {
+    margin-top: 15%;
+}
+
+.projectHeader {
+    font-style: bold;
+    padding-top: 5%;
+}

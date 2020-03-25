@@ -1,26 +1,14 @@
 import React from 'react'
 
 const ExperiencesTab = () => {
-    return(
+    return (
         <div id="3" className="container windowHeight">
-            <ul>
-                <li>
-                    <h2>2020</h2>
-                    <ul>
-                        <li>
-                            experiences... really wish I had more now
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <h2>2019</h2>
-                    <ul>
-                        <li>
-                            experiences... really wish I had more now
-                        </li>
-                    </ul>
-                </li>
-            </ul>
+            <div className="row windowHeight">
+                <div className="col-12 text-center">
+                    <h1>Resume</h1>
+                    <embed src="http://www.africau.edu/images/default/sample.pdf" width="70%" height="90%"></embed>
+                </div>
+            </div>
         </div>
     )
 }
