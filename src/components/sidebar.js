@@ -11,47 +11,47 @@ class Sidebar extends React.Component {
         return (
             <div className={"windowHeight " + styles.bg}>
                 <ul className="list-group">
-                    <li className={("list-group-item " + ((this.props.current === 1) ? "active" : ""))}
+                    <li className={("list-group-item text-center " + ((this.props.current === 1) ? styles.active : styles.inactive))}
                         onClick={() => {
                             scrollToSection("1")
                         }}>
-                        Home
+                        <i class="fa fas fa-home"></i>
                 </li>
-                    <li className={("list-group-item " + ((this.props.current === 2) ? "active" : ""))}
+                    <li className={("list-group-item text-center " + ((this.props.current === 2) ? styles.active : styles.inactive))}
                         onClick={() => {
                             scrollToSection("2")
                         }}>
-                        About Me
+                        <span className= {styles.listItem}><i class="fa fas fa-user"></i></span>
                 </li>
-                    <li className={("list-group-item " + ((this.props.current === 3) ? "active" : ""))}
+                    <li className={("list-group-item text-center " + ((this.props.current === 3) ? styles.active : styles.inactive))}
                         onClick={() => {
                             scrollToSection("3")
                         }}>
-                        Experiences
+                        <i class="fa fas fa-briefcase"></i>
                 </li>
-                    <li className={("list-group-item " + ((this.props.current === 4) ? "active" : ""))}
+                    <li className={("list-group-item text-center " + ((this.props.current === 4) ? styles.active : styles.inactive))}
                         onClick={() => {
                             scrollToSection("4")
                         }}>
-                        Skills
+                        <i class="fa fas fa-book"></i>
                 </li>
-                    <li className={("list-group-item " + ((this.props.current === 5) ? "active" : ""))}
+                    <li className={("list-group-item text-center " + ((this.props.current === 5) ? styles.active : styles.inactive))}
                         onClick={() => {
                             scrollToSection("5")
                         }}>
-                        Projects
+                        <i class="fa fas fa-code"></i>
                 </li>
-                    <li className={("list-group-item " + ((this.props.current === 6) ? "active" : ""))}
+                    <li className={("list-group-item text-center " + ((this.props.current === 6) ? styles.active : styles.inactive))}
                         onClick={() => {
                             scrollToSection("6")
                         }}>
-                        Other Interests
+                        <i class="fa fas fa-gamepad"></i>
                 </li>
-                    <li className={("list-group-item " + ((this.props.current === 7) ? "active" : ""))}
+                    <li className={("list-group-item text-center " + ((this.props.current === 7) ? styles.active : styles.inactive))}
                         onClick={() => {
                             scrollToSection("7")
                         }}>
-                        Contact
+                        <i class="fa fas fa-pencil"></i>
                 </li>
                 </ul>
             </div>

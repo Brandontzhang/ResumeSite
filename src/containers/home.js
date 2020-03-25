@@ -50,6 +50,7 @@ class Home extends React.Component {
             var scrollPosition = element.getBoundingClientRect().top;
             scrollPositions[i] = Math.abs(scrollPosition)
         }
+        
         var min = Number.POSITIVE_INFINITY;
         var index = 0;
         for (let i = 1; i < 8; i++) {

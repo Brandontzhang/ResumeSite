@@ -1,5 +1,19 @@
 .bg {
-    background-color:pink;
+    background-color:#0C2D48;
     position:sticky;
     top: 0px;
+}
+
+.active {
+    background-color: #145DA0;
+    border: none;
+    color: #B1D4E0;
+    border-radius: 0%;
+}
+
+.inactive {
+    background-color: #0C2D48;
+    color: #B1D4E0;
+    border: none;
+    border-radius: none;
 }
