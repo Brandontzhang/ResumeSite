@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 //import { Link } from "react-router-dom"
 import { Provider } from "react-redux";
 import { combineReducers, createStore } from "redux";
@@ -7,7 +7,7 @@ import { combineReducers, createStore } from "redux";
 import Sidebar from '../components/sidebar'
 import IntroTab from '../components/introTab'
 import AboutMeTab from '../components/aboutMeTab'
-import ExperiencesTab from '../components/experiencesTab'
+import ExperiencesTab from '../components/resume/experiencesTab'
 import ProjectTab from '../components/projectTab'
 import InterestsTab from '../components/interestsTab'
 import SkillsTab from '../components/skillsTab'
@@ -30,27 +30,27 @@ const rootReducer = combineReducers({
 
 const store = createStore(rootReducer)
 
-class Home extends React.Component {
-    state = {
-        current: 1
-    }
+const Home = () => {
+    const [currentTab, setCurrentTab] = useState(1)
 
-    componentDidMount() {
-        window.addEventListener('scroll', this.handleScroll, { passive: true })
-    }
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll, { passive: true })
+    }, [])
 
-    componentWillUnmount() {
-        window.removeEventListener('scroll', this.handleScroll)
-    }
+    useEffect(() => {
+        return () => {
+            window.removeEventListener('scroll', handleScroll)
+        }
+    }, [])
 
-    handleScroll = (event) => {
+    const handleScroll = (event) => {
         var scrollPositions = []
         for (let i = 1; i < 8; i++) {
             var element = document.getElementById(i)
             var scrollPosition = element.getBoundingClientRect().top;
             scrollPositions[i] = Math.abs(scrollPosition)
         }
-        
+
         var min = Number.POSITIVE_INFINITY;
         var index = 0;
         for (let i = 1; i < 8; i++) {
@@ -59,35 +59,27 @@ class Home extends React.Component {
                 index = i
             }
         }
-        this.setState(prevState => {
-            return{
-                current: index
-            }
-        })
+        setCurrentTab(index)
     }
 
-    render() {
-        return (
-            <Provider store={store}>
-                <div className="container-fluid">
-                    <div className="row row-no-padding">
-                        <div className="col-1">
-                            <Sidebar current={this.state.current}/>
-                        </div>
-                        <div className="col-11">
-                            <IntroTab />
-                            <AboutMeTab />
-                            <ExperiencesTab />
-                            <SkillsTab />
-                            <ProjectTab />
-                            <InterestsTab />
-                            <ContactTab />
-                        </div>
-                    </div>
+    return <Provider store={store}>
+        <div className="container-fluid">
+            <div className="row row-no-padding">
+                <div className="col-1">
+                    <Sidebar current={currentTab} />
                 </div>
-            </Provider>
-        )
-    }
+                <div className="col-11">
+                    <IntroTab />
+                    <AboutMeTab />
+                    <ExperiencesTab />
+                    <SkillsTab />
+                    <ProjectTab />
+                    <InterestsTab />
+                    <ContactTab />
+                </div>
+            </div>
+        </div>
+    </Provider>
 }
 
 export default Home

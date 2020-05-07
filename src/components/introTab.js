@@ -30,7 +30,7 @@ class IntroTab extends React.Component {
                             About Me
                         </button>
                         <button className={styles.introButton}
-                            onClick={() => {scrollToSection("6")}}>
+                            onClick={() => {scrollToSection("3")}}>
                             Resume
                         </button>
                         <button className={styles.introButton}

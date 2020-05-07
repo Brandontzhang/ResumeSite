@@ -11,7 +11,7 @@ const AboutMeTab = () => {
         <div id="2" className="container windowHeight">
             <div className={`row ${styles.section1Height}`}>
                 <div className="col-7 my-auto">
-                    <img src="src/images/tempProf.jpg"></img>
+                    <img src="src/images/tempProf.jpg" alt='me'/>
                 </div>
                 <div className="col-5 my-auto">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
