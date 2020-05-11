@@ -5,10 +5,15 @@
 }
 
 .cardHeight {
-    margin-top: 15%;
+    padding-top: 8%;
+    padding-bottom: 8%;
 }
 
 .projectHeader {
     font-style: bold;
     padding-top: 5%;
+}
+
+.card {
+    height: 100%
 }

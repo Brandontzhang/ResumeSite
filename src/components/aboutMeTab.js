@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from '../css/aboutMe.module.css'
+const me = require('./testImg.jpg')
 
 function scrollToSection(section) {
     var element = document.getElementById(section);
@@ -11,18 +12,13 @@ const AboutMeTab = () => {
         <div id="2" className="container windowHeight">
             <div className={`row ${styles.section1Height}`}>
                 <div className="col-7 my-auto">
-                    <img src="src/images/tempProf.jpg" alt='me'/>
+                    <img id="me" style={{height: 200}} src={me} alt='me'/>
                 </div>
                 <div className="col-5 my-auto">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                In eu mi bibendum neque egestas congue quisque. Ultricies mi eget 
-                mauris pharetra et ultrices neque ornare. Aliquam ultrices sagittis 
-                orci a scelerisque purus semper eget duis. Nunc faucibus a pellentesque sit. 
-                Est ante in nibh mauris cursus mattis molestie a iaculis. Sit amet venenatis urna cursus. 
-                Rhoncus mattis rhoncus urna neque viverra justo. Gravida neque convallis a
-                 cras semper auctor neque vitae. Ut ornare lectus sit amet est placerat.
-                  Libero nunc consequat interdum varius sit amet mattis vulputate.
+                Hi! My name is Brandon Zhang. I'm from New York City, and I'm currently a third year studying computer engineering
+                and computer science at Northeastern University. Some of my interests include web development and game design. I am
+                currently looking for an internship in software development or web development for Fall 2020. In 
+                my free time, I like ballroom dancing, learning how to play the guitar, and playing video games with friends. 
                 </div>
             </div>
             <div className = "row">

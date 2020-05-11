@@ -1,9 +1,54 @@
 import React from 'react'
+import BarChart from './BarChart'
+import styles from '../css/skills.module.css'
+
+const languages = {
+    title: { text: "Languages" },
+    labels: ['Java', 'Python', 'C++', 'C'],
+    fontColor: "white",
+    datasets: [
+        {
+            label: '',
+            borderColor: 'white',
+            borderWidth: 1,
+            hoverBackgroundColor: 'grey',
+            hoverBorderColor: 'gray',
+            data: [5, 4, 2, 2, 0, 5]
+        },
+    ]
+};
+
+const webDev = {
+    title: { text: "Wed Development" },
+    labels: ['React', 'Spring Boot', 'MySQL', 'Angular', 'NodeJS', 'Express', 'MongoDB'],
+    fontColor: "white",
+    datasets: [
+        {
+            label: '',
+            borderColor: 'white',
+            borderWidth: 1,
+            hoverBackgroundColor: 'grey',
+            hoverBorderColor: 'gray',
+            data: [4, 3, 3, 2, 4, 2, 2]
+        },
+    ]
+};
+
 
 const SkillsTab = () => {
     return (
         <div id="4" className="container windowHeight">
-            This would be a cool animated sideways bar graph, would need to learn how to create that when scrolled to
+            <div className={styles.title}>
+                <h2>Skills</h2>
+            </div>
+            <div className={"row " + styles.skillsTab}>
+                <div className="col-6">
+                    <BarChart data={languages} />
+                </div>
+                <div className="col-6">
+                    <BarChart data={webDev} />
+                </div>
+            </div>
         </div>
     )
 }

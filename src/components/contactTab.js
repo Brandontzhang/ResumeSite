@@ -3,11 +3,23 @@ import React from 'react'
 const ContactTab = () => {
     return (
         <div id="7" className="container windowHeight">
-            <div>
-                Contact form here, not with form html, custom made with inputs and buttons
+            <div className="text-center">
+                <h1>Contact</h1>
+                <div>
+                    <input type="text" placeholder="name" />
+                </div>
+                <div>
+                    <input type="email" placeholder="email" />
+                </div>
+                <div>
+                    <input type="textarea" placeholder="message" />
+                </div>
+                <div>
+                    <button>Send message</button>
+                </div>
             </div>
             <div>
-                small section linking to other social media probably
+                lower screen navbar? small section linking to other social media probably
             </div>
         </div>
     )

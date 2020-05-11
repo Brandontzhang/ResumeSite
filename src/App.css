@@ -37,9 +37,15 @@
   }
 }
 
+.sidebarHeight {
+  height: 100vh;
+  vertical-align: middle;
+}
+
 .windowHeight {
   height: 100vh;
-  vertical-align: middle
+  vertical-align: middle;
+  border-bottom: 1px solid black;
 }
 
 .row-no-padding > [class*="col-"] {

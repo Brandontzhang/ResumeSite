@@ -7,7 +7,7 @@ import { combineReducers, createStore } from "redux";
 import Sidebar from '../components/sidebar'
 import IntroTab from '../components/introTab'
 import AboutMeTab from '../components/aboutMeTab'
-import ExperiencesTab from '../components/resume/experiencesTab'
+import ExperiencesTab from '../components/experiencesTab'
 import ProjectTab from '../components/projectTab'
 import InterestsTab from '../components/interestsTab'
 import SkillsTab from '../components/skillsTab'
