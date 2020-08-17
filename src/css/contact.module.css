@@ -1,0 +1,14 @@
+input, label {
+    display: block;
+}
+
+input {
+    border: none;
+}
+
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

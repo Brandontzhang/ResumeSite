@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from '../css/aboutMe.module.css'
-const me = require('./testImg.jpg')
+const me = require('../images/testImg.jpg')
 
 function scrollToSection(section) {
     var element = document.getElementById(section);

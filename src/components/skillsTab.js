@@ -4,7 +4,7 @@ import styles from '../css/skills.module.css'
 
 const languages = {
     title: { text: "Languages" },
-    labels: ['Java', 'Python', 'C++', 'C'],
+    labels: ['Java', 'JavaScript','Python', 'C++', 'C'],
     fontColor: "white",
     datasets: [
         {
@@ -13,7 +13,7 @@ const languages = {
             borderWidth: 1,
             hoverBackgroundColor: 'grey',
             hoverBorderColor: 'gray',
-            data: [5, 4, 2, 2, 0, 5]
+            data: [5, 4, 3, 2, 2, 0, 5]
         },
     ]
 };
@@ -29,7 +29,7 @@ const webDev = {
             borderWidth: 1,
             hoverBackgroundColor: 'grey',
             hoverBorderColor: 'gray',
-            data: [4, 3, 3, 2, 4, 2, 2]
+            data: [5, 3, 3, 2, 4, 2, 2, 0, 5]
         },
     ]
 };
